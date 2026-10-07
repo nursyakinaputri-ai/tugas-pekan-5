@@ -49,7 +49,7 @@ class TestConfigAndBilling(unittest.TestCase):
         os.environ["PAYMENT_API_KEY"] = "token_abc"
 
         with self.assertRaises(ValueError) as ctx:
-            AppSettings.load_from_env()
+            AppSettings.load_from_env(env_file='__test_missing__.env')
 
         self.assertIn("DATABASE_URL", str(ctx.exception))
 
