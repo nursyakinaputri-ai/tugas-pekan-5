@@ -1,0 +1,32 @@
+[project]
+name = "siakad-billing-service"
+version = "1.0.0"
+description = "Layanan Penagihan UKT dan Verifikasi SIAKAD FST UIN Alauddin Makassar"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Tim Pengembang SI FST UINAM", email = "developer@uin-alauddin.ac.id" }
+]
+dependencies = [
+    "pydantic>=2.9.0,<3.0.0",
+    "pydantic-settings>=2.5.0,<3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+    "ruff>=0.6.9",
+    "mypy>=1.11.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]

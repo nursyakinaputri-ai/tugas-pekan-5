@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Secrets & Environment Variables (CRITICAL: DO NOT COMMIT!)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Database & SQLite files
+*.db
+*.sqlite3
+
+# Testing & Coverage caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Linters & Tool caches
+.ruff_cache/
+.mypy_cache/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
